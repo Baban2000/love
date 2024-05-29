@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="text">Write Numbers</label>
+        <input type="number" id="name" onkeyup="fun()"><br>
+        <div id="id_span"></div>
+    </form>
+</body>
+
+<script>
+    function fun() {
+        var name = document.getElementById('name').value;
+        var message = '';
+
+        for (i = 0; i < name; i++) {
+            message += 'I love you golu<br>';
+        }
+        document.getElementById('id_span').innerHTML = message;
+    }
+</script>
+
+</html>
